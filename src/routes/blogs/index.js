@@ -4,7 +4,9 @@ import { usePrerenderData } from '@preact/prerender-data-provider';
 import style from './style';
 
 const blogs = (props) => {
+    console.log("blogs -> props", props)
 	const [data, isLoading] = usePrerenderData(props);
+    console.log("blogs -> data", data)
 	return (
 		<div class={style.pageBlogs}>
 			<h1 class={style.pageTitle}>My Blogs</h1>
